@@ -1,0 +1,91 @@
+﻿body {
+	font-family: sans-serif;
+	min-width: 500px;
+}
+
+#main {
+	display: flex;
+}
+
+#overlay {
+	background-color: white;
+	height: 100%;
+	position: absolute;
+	visibility: hidden;
+	width: 100%;
+}
+
+#pe_label_loading {
+	text-align: center;
+}
+
+.button {
+	background-color: #eee;
+	border-radius: 5px;
+	clear: left;
+	float: left;
+	min-height: 30px;
+	min-width: 130px;
+}
+
+.label {
+	float: left;
+	font-size: 8pt;
+	min-height: 40px;
+	overflow: hidden;
+	padding-left: 10px;
+	width: 260px;
+}
+
+.leftbox {
+	background-color: #eee;
+	border-radius: 5px;
+	flex: 1;
+	margin: 5px;
+	padding: 5px;
+}
+
+.leftbox > b {
+	color: brown;
+}
+
+.rightbox {
+	flex: 1.5;
+	margin: 5px;
+	padding: 5px;
+}
+
+.spinner {
+    height: 60px;
+    margin: 50px auto;
+    position: relative;
+    width: 60px;
+}
+
+.spinner div {
+	background-color: brown;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    -webkit-animation: cuberotate 2.0s infinite ease-in-out;
+}
+
+.spinner div:nth-child(2) {
+    -webkit-animation-delay: -1.0s;
+}
+
+@-webkit-keyframes cuberotate {
+    25% { -webkit-transform: translateX(22px) rotate(-90deg) scale(0.5) }
+    50% { -webkit-transform: translateX(22px) translateY(22px) rotate(-180deg) }
+    75% { -webkit-transform: translateX(0px) translateY(22px) rotate(-270deg) scale(0.5) }
+    100% { -webkit-transform: rotate(-360deg) }
+}
+
+@keyframes cuberotate {
+    25% { transform: translateX(42px) rotate(-90deg) scale(0.5); } 
+    50% { transform: translateX(42px) translateY(42px) rotate(-180deg); } 
+    75% { transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); } 
+    100% { transform: rotate(-360deg); }
+}

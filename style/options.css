@@ -1,0 +1,27 @@
+﻿a {
+	color: brown;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.aboutbox {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.aboutbox > div {
+	background-color: #eee;
+	border-radius: 10px;
+	flex: 1;
+	margin: 10px;
+	min-height: 100px;
+	min-width: 300px;
+	padding: 20px;
+}
+
+.headbox {
+	margin: 10px;
+	padding: 20px;
+}

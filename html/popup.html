@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+	<title>Privacy Extension</title>
+	<link rel="stylesheet" type="text/css" href="../style/popup.css"/>
+</head>
+<body>
+	<div id="overlay">
+		<div class="spinner">
+			<div></div>
+			<div></div>
+		</div>
+		<div id="pe_label_loading"></div>
+	</div>
+	<div id="main">
+		<div class="leftbox">
+			<b>Header</b><br/>
+			<input type="checkbox" id="pe_opt_accept"/> Accept<br/>
+			<input type="checkbox" id="pe_opt_cookie"/> Cookie<small><input type="checkbox" id="pe_opt_cookie_3rd"/> <span id="pe_label_cookie_3rd"></span></small><br/>
+			<input type="checkbox" id="pe_opt_referer"/> Referer<br/>
+			<input type="checkbox" id="pe_opt_user_agent"/> User Agent<br/>
+			<br/>
+			<b>Script</b> <input type="checkbox" id="pe_opt_script"/><br/>
+			<input type="checkbox" id="pe_opt_navigator"/> navigator<br/>
+			&nbsp;<input type="checkbox" id="pe_opt_navigatormimetypes"/> mimeTypes<br/>
+			&nbsp;<input type="checkbox" id="pe_opt_navigatorplugins"/> plugins<br/>
+			<input type="checkbox" id="pe_opt_canvastodataurl"/> toDataURL<br/>
+		</div>
+		<div class="rightbox">
+			<input type="button" id="pe_but_clear_data" class="button"/> <div id="pe_label_clear_data" class="label">
+				<input type="checkbox" id="pe_opt_clear_data_3rd"/> <span id="pe_label_clear_data_3rd"></span><br/>
+			</div><br/>
+			<input type="button" id="pe_but_referer" class="button"/> <div id="pe_label_referer" class="label">&nbsp;</div><br/>
+			<input type="button" id="pe_but_user_agent" class="button"/> <div id="pe_label_user_agent" class="label">&nbsp;</div><br/>
+		</div>
+	</div>
+</body>
+<script src="../js/popup.js"></script>
+</html>

@@ -1,0 +1,18 @@
+﻿{
+	"info_description": { "message": "Verschafft Privatsphäre für Chrome" },
+	"label_pe_but_clear_data": { "message": "Daten entfernen..." },
+	"label_pe_but_referer": { "message": "Referer setzen" },
+	"label_pe_but_user_agent": { "message": "User Agent setzen" },
+	"label_pe_label_cookie_3rd": { "message": "von Dritten" },
+	"label_pe_label_clear_data_3rd": { "message": "Entferne Daten von Dritten" },
+	"label_pe_label_loading": { "message": "Zu entfernende Daten werden zusammengestellt...<br/><br/>(Bricht ab, wenn Dialog geschloßen wird!)" },
+	"message_input_ref": { "message": "Bitte spezifizieren Sie einen neuen Referer (wird dauerhaft übernommen). Leer lassen oder Abbrechen stellt den Standardwert wieder her." },
+	"message_input_ua": { "message": "Bitte spezifizieren Sie einen neuen User Agent (wird dauerhaft übernommen). Leer lassen oder Abbrechen stellt den Standardwert wieder her." },
+	"message_clear_data_count_cookies": { "message": "Cookies" },
+	"message_clear_data_count_db": { "message": "Datenbanken" },
+	"message_clear_data_count_localstorage": { "message": "Elemente im lokalen Speicher" },
+	"message_clear_data_count_sessionstorage": { "message": "Elemente im Sitzungsspeicher" },
+	"message_clear_data_confirm_prefix": { "message": "Die folgenden Elemente entfernen?" },
+	"message_clear_data_confirm_suffix": { "message": "Alle in der aktuellen Sitzung verfügbaren Daten werden entfernt!" },
+	"message_clear_data_empty": { "message": "Keine Elemente gefunden oder Seite wurde nach einer Aktualisierung der Erweiterung noch nicht neu geladen!" }
+}
