@@ -1,0 +1,9 @@
+﻿Privacy Extension 1.1 (released 2015-06-14)
+
+- fixed method for overwriting navigator attributes (delete navigator.* no longer worked in Chrome 43, now using __defineGetter__)
+- added option to prevent window.name attribute to be used as vector for ever cookies (as suggested in the comments)
+- added X-Client-Data to list of blocked headers if user agent is hidden
+
+Privacy Extension 1.0 (released 2014-08-09)
+
+Initial Release

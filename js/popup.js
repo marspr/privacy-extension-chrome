@@ -208,6 +208,7 @@ var handleDep = function() {
 	if (document.getElementById("pe_opt_script").checked) {
 		document.getElementById("pe_opt_navigator").disabled=false;
 		document.getElementById("pe_opt_canvastodataurl").disabled=false;
+		document.getElementById("pe_opt_windowname").disabled=false;
 		if (document.getElementById("pe_opt_navigator").checked) {
 			document.getElementById("pe_opt_navigatormimetypes").disabled=false;
 			document.getElementById("pe_opt_navigatorplugins").disabled=false;
@@ -222,6 +223,7 @@ var handleDep = function() {
 		document.getElementById("pe_opt_navigatormimetypes").disabled=true;
 		document.getElementById("pe_opt_navigatorplugins").disabled=true;
 		document.getElementById("pe_opt_canvastodataurl").disabled=true;
+		document.getElementById("pe_opt_windowname").disabled=true;
 	}
 };
 
@@ -293,6 +295,7 @@ var load = function() {
 	var pe_opt_navigatormimetypes = localStorage.pe_opt_navigatormimetypes;
 	var pe_opt_navigatorplugins = localStorage.pe_opt_navigatorplugins;
 	var pe_opt_canvastodataurl = localStorage.pe_opt_canvastodataurl;
+	var pe_opt_windowname = localStorage.pe_opt_windowname;
 	var pe_opt_perm_referer = localStorage.pe_opt_perm_referer;
 	var pe_opt_perm_ua = localStorage.pe_opt_perm_ua;
 	var pe_opt_cookie = localStorage.pe_opt_cookie;
@@ -307,6 +310,7 @@ var load = function() {
 	if (!pe_opt_navigatormimetypes||pe_opt_navigatormimetypes=="yes") document.getElementById("pe_opt_navigatormimetypes").checked = "checked";
 	if (!pe_opt_navigatorplugins||pe_opt_navigatorplugins=="yes") document.getElementById("pe_opt_navigatorplugins").checked = "checked";
 	if (!pe_opt_canvastodataurl||pe_opt_canvastodataurl=="yes") document.getElementById("pe_opt_canvastodataurl").checked = "checked";
+	if (!pe_opt_windowname||pe_opt_windowname=="yes") document.getElementById("pe_opt_windowname").checked = "checked";
 	if (!pe_opt_cookie||pe_opt_cookie=="yes") document.getElementById("pe_opt_cookie").checked = "checked";
 	if (!pe_opt_cookie_3rd||pe_opt_cookie_3rd=="yes") document.getElementById("pe_opt_cookie_3rd").checked = "checked";
 	if (!pe_opt_clear_data_3rd||pe_opt_clear_data_3rd=="yes") document.getElementById("pe_opt_clear_data_3rd").checked = "checked";
@@ -340,6 +344,7 @@ var load = function() {
 	document.getElementById("pe_opt_navigatormimetypes").addEventListener('click', save);
 	document.getElementById("pe_opt_navigatorplugins").addEventListener('click', save);
 	document.getElementById("pe_opt_canvastodataurl").addEventListener('click', save);
+	document.getElementById("pe_opt_windowname").addEventListener('click', save);
 	document.getElementById("pe_opt_cookie").addEventListener('click', save);
 	document.getElementById("pe_opt_cookie_3rd").addEventListener('click', save);
 	document.getElementById("pe_opt_clear_data_3rd").addEventListener('click', save);
@@ -362,6 +367,7 @@ var save = function() {
 	localStorage.pe_opt_navigatormimetypes = (document.getElementById("pe_opt_navigatormimetypes").checked===true)?"yes":"no";
 	localStorage.pe_opt_navigatorplugins = (document.getElementById("pe_opt_navigatorplugins").checked===true)?"yes":"no";
 	localStorage.pe_opt_canvastodataurl = (document.getElementById("pe_opt_canvastodataurl").checked===true)?"yes":"no";
+	localStorage.pe_opt_windowname = (document.getElementById("pe_opt_windowname").checked===true)?"yes":"no";
 	localStorage.pe_opt_script = (document.getElementById("pe_opt_script").checked===true)?"yes":"no";
 	localStorage.pe_opt_cookie = (document.getElementById("pe_opt_cookie").checked===true)?"yes":"no";
 	localStorage.pe_opt_cookie_3rd = (document.getElementById("pe_opt_cookie_3rd").checked===true)?"yes":"no";

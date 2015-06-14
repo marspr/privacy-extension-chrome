@@ -101,6 +101,7 @@ var prepareExcludeList = function(includeCookies) {
 	// exclude user agent header
 	if (pe_opt_user_agent == "no") {
 		exclude.push("User-Agent");
+		exclude.push("X-Client-Data");
 	}
 	// exclude accept headers
 	if (pe_opt_accept == "no") {

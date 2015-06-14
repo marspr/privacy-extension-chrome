@@ -5,7 +5,7 @@ tab and its embedded resources (e.g. frames, images, scripts).
 
 Prevent browser and canvas fingerprinting by restricting exposure of header
 fields (Accept, Cookie, Referer and User-Agent) and JavaScript objects or
-functions (document.cookie, navigator and Canvas.toDataURL).
+functions (document.cookie, navigator, Canvas.toDataURL and window.name).
 
 You may also set your own refer(r)er or user agent. This fields and your
 cookie settings will be propagated to both: header fields AND JavaScript.
